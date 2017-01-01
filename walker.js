@@ -1,12 +1,12 @@
-var info = document.getElementById("info")
-var walker = document.getElementById('walker')
+let info = document.getElementById("info")
+let walker = document.getElementById('walker')
 
 walker.addEventListener("click", function(){
 
-  var request = new XMLHttpRequest();
+  let request = new XMLHttpRequest();
   request.open('GET', "http://api.icndb.com/jokes/random");
   request.onload = function(){
-var ourData = JSON.parse(request.responseText);
+let ourData = JSON.parse(request.responseText);
 info.innerHTML= ourData.value.joke;
 console.log(ourData);
 };
@@ -15,16 +15,11 @@ request.send();
 
 
 
-
-
-
-
-
-var walkingLeft = true;
-var leftBorder = 0;
-var rightBorder = window.innerWidth - walker.offsetWidth;
-var speed = 10;
-var xPos = rightBorder;
+let walkingLeft = true;
+let leftBorder = 0;
+let rightBorder = window.innerWidth - walker.offsetWidth;
+let speed = 10;
+let xPos = rightBorder;
 
 
 function update() {
