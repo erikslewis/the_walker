@@ -4,6 +4,10 @@ img {
   margin-top: 230px;
   cursor: pointer; }
 
+body{
+  background-color: blue;
+}
+
 img.flip {
   -webkit-transform: scaleX(-1);
   transform: scaleX(-1); }
