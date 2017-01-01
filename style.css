@@ -2,10 +2,13 @@ img {
   position: absolute;
   width: 200px;
   margin-top: 230px;
-  cursor: pointer; }
+  cursor: pointer;
+background-color: blue; }
 
 body{
   background-color: blue;
+
+
 }
 
 h1{
