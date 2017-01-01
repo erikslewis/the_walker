@@ -8,6 +8,13 @@ body{
   background-color: blue;
 }
 
+h1{
+  color: red;
+  font-size: 40px;
+  text-decoration: underline;
+  text-align: center;
+}
+
 img.flip {
   -webkit-transform: scaleX(-1);
   transform: scaleX(-1); }
